@@ -1,14 +1,16 @@
-# SRAM-Design-and-Verification-by-using-SystemVerilog
+# SRAM-Design-and-Verification-using-SystemVerilog
+
 This project implements a Static Random Access Memory (SRAM) using SystemVerilog, supporting synchronous read and write operations. The design is verified using a SystemVerilog testbench to ensure correct memory functionality and timing behavior.
-# SRAM Design and Verification using SystemVerilog
-
-## Project Overview
-
-This project presents a clean and synthesizable implementation of a *Static Random Access Memory (SRAM)* using *SystemVerilog*, along with a structured testbench for functional verification. The objective is to demonstrate correct SRAM behavior, control logic, and timing suitable for VLSI and digital design learning.
 
 ---
 
-## Objectives
+## 📌 Project Overview
+
+This project presents a clean and synthesizable implementation of a **Static Random Access Memory (SRAM)** using **SystemVerilog**, along with a structured testbench for functional verification. The objective is to demonstrate correct SRAM behavior, control logic, and timing suitable for VLSI and digital design learning.
+
+---
+
+## 🎯 Objectives
 
 * Design a parameterized single-port SRAM in SystemVerilog
 * Support synchronous read and write operations
@@ -17,52 +19,53 @@ This project presents a clean and synthesizable implementation of a *Static Rand
 
 ---
 
-## SRAM Description
+## 🧩 SRAM Description
 
 SRAM is a high-speed volatile memory that stores data using latch-based cells. It does not require refresh cycles, making it ideal for cache memory and performance-critical applications.
 
 ---
 
-## Design Specifications
+## ⚙️ Design Specifications
 
-* Memory Type: Single-Port SRAM
-* HDL: SystemVerilog
-* Read: Synchronous
-* Write: Synchronous
-* Key Signals:
+* **Memory Type**: Single-Port SRAM
+* **HDL**: SystemVerilog
+* **Read**: Synchronous
+* **Write**: Synchronous
+* **Key Signals**:
 
-  * clk  : Clock
-  * we   : Write Enable
-  * re   : Read Enable
-  * addr : Address bus
-  * din  : Data input
-  * dout : Data output
+  * `clk`  : Clock
+  * `we`   : Write Enable
+  * `re`   : Read Enable
+  * `addr` : Address bus
+  * `din`  : Data input
+  * `dout` : Data output
 
 ---
 
-## Functional Operation
+## 🔄 Functional Operation
 
-* On each rising edge of clk:
+* On each rising edge of `clk`:
 
-  * If we is high, input data is written to the addressed memory location
-  * If re is high, data from the addressed location is driven to the output
+  * If `we` is high, input data is written to the addressed memory location
+  * If `re` is high, data from the addressed location is driven to the output
+
 * Read and write are controlled to avoid conflicts
 
 ---
 
-## Verification Environment and Approach
+## 🧪 Verification Environment and Approach
 
-The verification environment is built using *SystemVerilog* to ensure functional correctness and robustness of the SRAM design. It follows a structured and modular testbench approach commonly used in industry-level RTL verification.
+The verification environment is built using **SystemVerilog** to ensure functional correctness and robustness of the SRAM design. It follows a structured and modular testbench approach commonly used in industry-level RTL verification.
 
-### Verification Environment Components
+### 🔹 Verification Environment Components
 
-* *Testbench Top*: Instantiates the SRAM DUT and connects all interfaces
-* *Clock Generator*: Produces a stable periodic clock
-* *Stimulus Generator*: Drives address, data, and control signals (we, re)
-* *Monitor*: Observes DUT inputs and outputs during simulation
-* *Checker / Scoreboard*: Compares expected data with actual SRAM output
+* **Testbench Top**: Instantiates the SRAM DUT and connects all interfaces
+* **Clock Generator**: Produces a stable periodic clock
+* **Stimulus Generator**: Drives address, data, and control signals (`we`, `re`)
+* **Monitor**: Observes DUT inputs and outputs during simulation
+* **Checker / Scoreboard**: Compares expected data with actual SRAM output
 
-### Verification Strategy
+### 🔹 Verification Strategy
 
 * Perform write operations across multiple memory addresses
 * Read back stored data and compare with expected values
@@ -73,28 +76,24 @@ This verification setup ensures protocol correctness, data integrity, and timing
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
+SRAM_SystemVerilog/
 
-SRAM_SystemVerilog
-
-├── sram.sv        // SRAM RTL design
-
-├── tb_sram.sv     // Verification testbench
+├── sram.sv   // SRAM RTL design
 
 ├── README.md      // Documentation
 
+---
+
+## 🛠️ Tools and Environment
+
+* **Language**: SystemVerilog
+* **Simulation**: ModelSim / QuestaSim 
 
 ---
 
-## Tools and Environment
-
-* Language: SystemVerilog
-* Simulation: ModelSim / QuestaSim / any SV-compatible simulator
-
----
-
-## Applications
+## 🚀 Applications
 
 * Cache and memory subsystem design
 * VLSI and ASIC fundamentals
@@ -102,8 +101,10 @@ SRAM_SystemVerilog
 
 ---
 
-## Learning Outcomes
+## 🎓 Learning Outcomes
 
 * Practical understanding of SRAM architecture
 * Writing clean and synthesizable SystemVerilog RTL
 * Developing basic verification testbenches
+
+---
