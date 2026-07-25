@@ -1,4 +1,4 @@
-# SRAM-Design-and-Verification-using-SystemVerilog.
+# SRAM-Design-and-Verification-using-SystemVerilog
 
 This project implements a Static Random Access Memory (SRAM) using SystemVerilog, supporting synchronous read and write operations. The design is verified using a SystemVerilog testbench to ensure correct memory functionality and timing behavior.
 
@@ -98,13 +98,5 @@ SRAM_SystemVerilog/
 * Cache and memory subsystem design
 * VLSI and ASIC fundamentals
 * Digital system design practice
-
----
-
-## 🎓 Learning Outcomes
-
-* Practical understanding of SRAM architecture
-* Writing clean and synthesizable SystemVerilog RTL
-* Developing basic verification testbenches
 
 ---
